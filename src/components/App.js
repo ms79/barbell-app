@@ -1,11 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import WeightTextBox from "./WeightTextBox"
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
+export default class App extends React.Component {
+  render ()
+  {
+    return(
+      <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,8 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <WeightTextBox />
     </div>
-  );
-}
+    );
 
-export default App;
+  }
+}
